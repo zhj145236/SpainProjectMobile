@@ -1,0 +1,375 @@
+{
+	"pages": [
+
+		{
+			"path": "pages/index/index",
+			"style": { 
+				"navigationBarTitleText": "Centro comercial favorito",
+				//"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent",
+						"searchInput": {
+							"backgroundColor": "rgba(231, 231, 231,.7)",
+							"borderRadius": "16px",
+							"placeholder": "Por favor ingreseel productoquedeseabuscar",
+							"disabled": true,
+							"placeholderColor": "#606266"
+						},
+						"buttons": [{
+								"type": "home",
+								// "fontSrc": "/static/yticon.ttf",
+								// "text": "\ue60d",
+								"fontSize": "26",
+								"color": "#303133",
+								"float": "left",
+								"background": "rgba(0,0,0,0)"
+							},
+							{
+								"fontSrc": "/static/yticon.ttf",
+								"text": "\ue744",
+								"fontSize": "27",
+								"color": "#303133",
+								"background": "rgba(0,0,0,0)",
+								"redDot": true
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/product/product",
+			"style": {
+				"navigationBarTitleText": "Pantalla de detalles",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		}, {
+			"path": "pages/set/set",
+			"style": {
+				"navigationBarTitleText": "Configuración"
+			}
+		},
+
+		{
+			"path": "pages/userinfo/userinfo",
+			"style": {
+				"navigationBarTitleText": "Modificarinformación"
+			}
+		}, {
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "Carrito de compras"
+			}
+		}, 
+		{
+			"path": "pages/public/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "slide-in-bottom"
+				}
+			}
+		}, 
+		{
+			"path": "pages/public/regist",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "slide-in-bottom"
+				}
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "Mi",
+				// #ifdef MP
+				"navigationStyle": "custom",
+				// #endif
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"type": "transparent",
+						"buttons": [{
+								"fontSrc": "/static/yticon.ttf",
+								"text": "\ue60f",
+								"fontSize": "24",
+								"color": "#303133",
+								"width": "46px",
+								"background": "rgba(0,0,0,0)"
+							},
+							{
+								"fontSrc": "/static/yticon.ttf",
+								"text": "\ue744",
+								"fontSize": "28",
+								"color": "#303133",
+								"background": "rgba(0,0,0,0)",
+								"redDot": true
+							}
+						]
+					}
+				}
+			}
+		}, {
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		}, 
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "Mi pedido",
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/order/detail",
+			"style": {
+				"navigationBarTitleText": "Detalles del pedido"
+			}
+		},
+		{
+		 	"path": "pages/money/refund",
+		 	"style": {
+		 		"navigationBarTitleText": "Solicite el servicioposventa"
+		 	}
+		},
+		{
+			"path": "pages/money/money",
+			"style": {}
+		}, {
+			"path": "pages/order/createOrder",
+			"style": {
+				"navigationBarTitleText": "Cree un pedido"
+			}
+		}, {
+			"path": "pages/address/address",
+			"style": {
+				"navigationBarTitleText": "Direccion deentrega"
+			}
+		}, {
+			"path": "pages/address/addressManage",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "pages/money/pay",
+			"style": {
+				"navigationBarTitleText": "Pago"
+			}
+		},
+		{
+			"path": "pages/money/paySuccess",
+			"style": {
+				"navigationBarTitleText": "Pago exitoso"
+			}
+		}
+	    ,{
+            "path" : "pages/notice/notice",
+            "style" : {
+				"navigationBarTitleText": "Aviso"
+			}
+        }
+		,{
+		    "path" : "pages/notice/detail",
+		    "style" : {
+				"navigationBarTitleText": "Detalles de la notificación",
+				"enablePullDownRefresh": false
+			}
+		}
+        ,{
+            "path" : "pages/category/category",
+            "style" : {
+				"navigationBarTitleText": "Clasificación",
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/product/list",
+            "style" : {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "Lista de productos",
+				"app-plus": {
+					"titleNView": {
+						"type": "default",
+						"searchInput": {
+							"backgroundColor": "rgba(231, 231, 231,.7)",
+							"borderRadius": "16px",
+							"placeholder": "Por favor ingreseel productoquedeseabuscar",
+							"disabled": true,
+							"placeholderColor": "#606266"
+						},
+						"autoBackButton": true
+					}
+				}
+			}
+        }
+		,{
+            "path" : "pages/search/search",
+            "style" : {
+				"enablePullDownRefresh": false,
+				// #ifdef MP
+				"navigationBarTitleText": "Buscarproductos",
+				// #endif 
+				"app-plus": {
+					"titleNView": {
+						"type": "default",
+						"searchInput": {
+							"align": "left",
+							"backgroundColor": "#ededed",
+							"borderRadius": "4px",
+							"placeholder": "Por favor ingreseel productoquedeseabuscar",
+							"placeholderColor": "#8a8a8a"
+						},
+						"autoBackButton": true,
+						"buttons": [
+							{
+								"width": "35px",
+								"fontSrc": "/static/yticon.ttf",
+								"text": "Cancelar",
+								"fontSize": "14",
+								"color": "#656b79",
+								"background": "#f6f8fa"
+							}
+						]
+					}
+				}
+			}
+        }
+		,{
+		    "path" : "pages/user/agreement",
+		    "style" : {
+				"navigationBarTitleText": "Acuerdo de membresía",
+				"enablePullDownRefresh": false
+			}
+		}
+        ,{
+            "path" : "pages/favorite/favorite",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "Mi colección",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/info",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "Información personal",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/baskorder/baskorder",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "Evaluación/Broncear Orden",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/coupon/coupon",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "Recibacupones",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/coupon/mycoupon",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "Mi bono",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/baskorder/submit",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "Broncear Orden",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/changepwd",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "Modifique la contraseña de inicio de sesión",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/comment",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "Evaluación de pedidos",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#f8f8f8"
+	},
+	"tabBar": {
+		"color": "#C0C4CC",
+		"selectedColor": "#fa436a",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tab-home.png",
+				"selectedIconPath": "static/tab-home-current.png",
+				"text": "Hogar"
+			},
+			{
+				"pagePath": "pages/category/category",
+				"iconPath": "static/tab-cate.png",
+				"selectedIconPath": "static/tab-cate-current.png",
+				"text": "Clasificación"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/tab-cart.png",
+				"selectedIconPath": "static/tab-cart-current.png",
+				"text": "Carrito"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "static/tab-my.png",
+				"selectedIconPath": "static/tab-my-current.png",
+				"text": "Mi"
+			}
+		]
+	}
+}
